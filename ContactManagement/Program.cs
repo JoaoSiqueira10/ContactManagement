@@ -1,7 +1,14 @@
+using ContactManagement.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<Context>(options => options.UseSqlServer("Data Source=DESKTOP-S42DPI7;Initial Catalog=ContactManagement;Integrated Security=True;TrustServerCertificate=True"));
+
+
 
 var app = builder.Build();
 

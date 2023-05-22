@@ -16,6 +16,26 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = D:\JG WorkFile\Programação\C#\Processo seletivo AlfaSoft\ContactManagement\ContactManagement
 build_property._RazorSourceGeneratorDebug = 
 
+[D:/JG WorkFile/Programação/C\#/Processo seletivo AlfaSoft/ContactManagement/ContactManagement/Views/Contacts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/JG WorkFile/Programação/C\#/Processo seletivo AlfaSoft/ContactManagement/ContactManagement/Views/Contacts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/JG WorkFile/Programação/C\#/Processo seletivo AlfaSoft/ContactManagement/ContactManagement/Views/Contacts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/JG WorkFile/Programação/C\#/Processo seletivo AlfaSoft/ContactManagement/ContactManagement/Views/Contacts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/JG WorkFile/Programação/C\#/Processo seletivo AlfaSoft/ContactManagement/ContactManagement/Views/Contacts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/JG WorkFile/Programação/C\#/Processo seletivo AlfaSoft/ContactManagement/ContactManagement/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
