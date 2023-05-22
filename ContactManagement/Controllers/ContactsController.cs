@@ -54,6 +54,18 @@ namespace ContactManagement.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (_context.Contact.Any(c => c.ContactNumber == contact.ContactNumber))
+                {
+                    ModelState.AddModelError("ContactNumber", "Contact number already exists.");
+                    return View(contact);
+                }
+
+                if (_context.Contact.Any(c => c.Email == contact.Email))
+                {
+                    ModelState.AddModelError("Email", "Email address already exists.");
+                    return View(contact);
+                }
+
                 _context.Add(contact);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -91,6 +103,18 @@ namespace ContactManagement.Controllers
 
             if (ModelState.IsValid)
             {
+                if (_context.Contact.Any(c => c.ContactNumber == contact.ContactNumber && c.Id != contact.Id))
+                {
+                    ModelState.AddModelError("ContactNumber", "Contact number already exists.");
+                    return View(contact);
+                }
+
+                if (_context.Contact.Any(c => c.Email == contact.Email && c.Id != contact.Id))
+                {
+                    ModelState.AddModelError("Email", "Email address already exists.");
+                    return View(contact);
+                }
+
                 try
                 {
                     _context.Update(contact);

@@ -1,14 +1,13 @@
 using ContactManagement.Models;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<Context>(options => options.UseSqlServer("Data Source=DESKTOP-S42DPI7;Initial Catalog=ContactManagement;Integrated Security=True;TrustServerCertificate=True"));
+string mySQLConnection= builder.Configuration.GetConnectionString("MariaDB");
+builder.Services.AddDbContext<Context>(options => options.UseMySql(mySQLConnection, ServerVersion.AutoDetect(mySQLConnection)));
 
 
 var app = builder.Build();

@@ -28,5 +28,8 @@ namespace ContactManagement.Models
         [Column("E-mail")]
         [Display(Name = "E-mail")]
         public string Email { get; set; }
+
+        [NotMapped]
+        public bool IsNewContact { get; set; }
     }
 }
