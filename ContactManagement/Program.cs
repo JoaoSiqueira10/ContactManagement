@@ -1,5 +1,7 @@
 using ContactManagement.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,7 +9,6 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<Context>(options => options.UseSqlServer("Data Source=DESKTOP-S42DPI7;Initial Catalog=ContactManagement;Integrated Security=True;TrustServerCertificate=True"));
-
 
 
 var app = builder.Build();
@@ -29,6 +30,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+    pattern: "{controller=Contacts}/{action=Index}/{id?}");
 
 app.Run();

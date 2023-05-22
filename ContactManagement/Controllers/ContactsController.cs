@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ContactManagement.Models;
 
@@ -21,9 +16,9 @@ namespace ContactManagement.Controllers
         // GET: Contacts
         public async Task<IActionResult> Index()
         {
-              return _context.Contact != null ? 
-                          View(await _context.Contact.ToListAsync()) :
-                          Problem("Entity set 'Context.Contact'  is null.");
+            return _context.Contact != null ?
+                        View(await _context.Contact.ToListAsync()) :
+                        Problem("Entity set 'Context.Contact'  is null.");
         }
 
         // GET: Contacts/Details/5
@@ -149,14 +144,14 @@ namespace ContactManagement.Controllers
             {
                 _context.Contact.Remove(contact);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool ContactExists(int id)
         {
-          return (_context.Contact?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Contact?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 }
