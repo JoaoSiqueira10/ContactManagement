@@ -29,3 +29,6 @@ D:\JG WorkFile\Programação\C#\Processo seletivo AlfaSoft\ContactManagement\Con
 D:\JG WorkFile\Programação\C#\Processo seletivo AlfaSoft\ContactManagement\ContactManagement\obj\Debug\net7.0\ContactManagement.pdb
 D:\JG WorkFile\Programação\C#\Processo seletivo AlfaSoft\ContactManagement\ContactManagement\obj\Debug\net7.0\ContactManagement.genruntimeconfig.cache
 D:\JG WorkFile\Programação\C#\Processo seletivo AlfaSoft\ContactManagement\ContactManagement\obj\Debug\net7.0\ref\ContactManagement.dll
+D:\JG WorkFile\Programação\C#\Processo seletivo AlfaSoft\ContactManagement\ContactManagement\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\JG WorkFile\Programação\C#\Processo seletivo AlfaSoft\ContactManagement\ContactManagement\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\JG WorkFile\Programação\C#\Processo seletivo AlfaSoft\ContactManagement\ContactManagement\obj\Debug\net7.0\ContactManagement.csproj.CopyComplete
